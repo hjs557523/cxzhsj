@@ -25,7 +25,7 @@ function fetch(url) {
       method: 'GET',
       header: {
         'content-type': 'application/json',
-        'Authorization': 'token a0b7c5cc05e32b938535f596401fe12b45e3be67'
+        'Authorization': 'token 这里换成你自己的token'
       },
       success: (res) => {
         console.log("success");
