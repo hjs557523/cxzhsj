@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view>
+	<image src="../images/github.jpg" mode="aspectFill" />
+	<input class="input-name" bindinput="bindInputGitHubUserName" value="{{githubName}}" placeholder="请输入你的Github ID"/>
+	<button bindtap="bindSearch" type="primary">确定</button>
+</view>
