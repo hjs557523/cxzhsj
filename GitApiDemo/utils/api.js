@@ -24,7 +24,8 @@ function fetch(url) {
       url: url,
       method: 'GET',
       header: {
-        'content-type': 'application/json'
+        'content-type': 'application/json',
+        'Authorization': 'token a0b7c5cc05e32b938535f596401fe12b45e3be67'
       },
       success: (res) => {
         console.log("success");
@@ -35,6 +36,9 @@ function fetch(url) {
       fail: () => {
         console.log("fail");
         reject();
+        wx.redirectTo({
+          url: '/pages/detail/detail',
+        })
       }
     });
   })

@@ -101,12 +101,12 @@ Page({
 
     this.setData({
       user: detail.user,
-      repo: repo.slice(0, 5),
-      prs: prs.slice(0, 5),
+      repo: repo.slice(0, 8),
+      prs: prs.slice(0, 8),
       language: this.collectLanguage(repo)
     })
     
-    console.log(detail.user);
+    // console.log(detail.user);
 
   },
 
